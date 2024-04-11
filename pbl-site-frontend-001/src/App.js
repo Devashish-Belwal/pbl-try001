@@ -1,17 +1,20 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './component/Navbar.js';
-import HomeCarousel from './component/HomeCarousel.js';
-import TeamStandings from './component/TeamStandings.js';
-import AboutUs from './component/AboutUs.js';
+import HomePage from './pages/HomePage.js';
+import Fixtures from './pages/Fixtures.js';
+import ContactUs from './pages/ContactUs.js';
 
 function App() {
   return (<div className='mainBackground'>
-    <Navbar/>
-    <HomeCarousel/>
-    <br/>
-    <AboutUs/>
-    <br/>
-    <TeamStandings/>
+    <Router>
+      < Navbar/>
+      <Routes>
+        <Route path='/home' element={<HomePage/>} />
+        <Route path='/fixtures' element={<Fixtures/>} />
+        <Route path='/contact-us' element={<ContactUs/>} />
+      </Routes>
+    </Router>
   </div>);
 }
 

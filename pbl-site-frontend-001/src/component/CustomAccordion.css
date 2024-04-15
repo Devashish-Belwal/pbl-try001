@@ -1,0 +1,40 @@
+import styled from 'styled-components';
+
+
+const AccordionContainer = styled.div`
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+`;
+
+const AccordionHeader = styled.div`
+  background-color: ${({ isOpen }) => (isOpen ? '#f0f0f0' : '#ffffff')};
+  color: ${({ isOpen }) => (isOpen ? '#000000' : '#000000')};
+  padding: 10px;
+  cursor: pointer;
+  display: flex; /* Added to align image and title */
+  align-items: center; /* Added to vertically center align items */
+`;
+
+const AccordionTitle = styled.div`
+  flex-grow: 1; /* Added to allow title to grow */
+`;
+
+const AccordionBody = styled.div`
+  padding: 10px;
+`;
+
+const Table = styled.table`
+  border-collapse: collapse;
+  width: 100%;
+`;
+
+const TableRow = styled.tr`
+  '''&:nth-child(even) {
+    background-color: #000000;
+  }'''
+`;
+
+const TableCell = styled.td`
+  border: 1px solid #dddddd;
+  padding: 8px;
+`;

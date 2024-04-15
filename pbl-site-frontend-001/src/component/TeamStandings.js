@@ -6,12 +6,18 @@ const TeamStandings = () => {
 
     const iconsDict = {}
     
-    iconsDict["icons.team01"] = icons.team01;
-    iconsDict["icons.team02"] = icons.team02;
-    iconsDict["icons.team03"] = icons.team03;
-    iconsDict["icons.team04"] = icons.team04;
-    iconsDict["icons.team05"] = icons.team05;
-    iconsDict["icons.team06"] = icons.team06;
+    iconsDict["Team01Name"] = icons.team01;
+    iconsDict["Team02Name"] = icons.team02;
+    iconsDict["Team03Name"] = icons.team03;
+    iconsDict["Team04Name"] = icons.team04;
+    iconsDict["Team05Name"] = icons.team05;
+    iconsDict["Team06Name"] = icons.team06;
+    iconsDict["Team07Name"] = icons.team07;
+    iconsDict["Team08Name"] = icons.team08;
+    iconsDict["Team09Name"] = icons.team09;
+    iconsDict["Team10Name"] = icons.team10;
+    iconsDict["Team11Name"] = icons.team11;
+    iconsDict["Team12Name"] = icons.team12;
 
     const [AllTeamData, setAllTeamData] = useState([])
 
@@ -36,7 +42,7 @@ const TeamStandings = () => {
         <div>
         {AllTeamData.map((team) => {
         return (
-        <CustomAccordion title={team.name} icon={iconsDict[team.icon]} total={team.total_games} win={team.wins} loss={team.loses}>
+        <CustomAccordion title={team.name} icon={iconsDict[team.name]} total={team.total_games} win={team.wins} loss={team.loses}>
             <p>
             {team.name}
             </p>

@@ -6,8 +6,10 @@ import TeamStandings from '../component/TeamStandings';
 const HomePage = () => {
   return (<>
     <HomeCarousel/>
-    <AboutUs/>
-    <TeamStandings/>
+    <div style={{ display: 'grid', placeItems: 'center', width: '100%' }}>
+        <AboutUs/>
+        <TeamStandings/>
+    </div>
   </>)
 }
 

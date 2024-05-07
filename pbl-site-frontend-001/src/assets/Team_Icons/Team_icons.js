@@ -1,16 +1,16 @@
 // images.js
-import team01 from './01.png';
-import team02 from './02.png';
-import team03 from './03.png';
-import team04 from './04.png';
-import team05 from './05.png';
-import team06 from './06.png';
-import team07 from './07.png';
-import team08 from './08.png';
-import team09 from './09.png';
-import team10 from './10.png';
-import team11 from './11.png';
-import team12 from './12.png';
+import team01 from './Bandipur Blazers.png';
+import team02 from './Corbett Crushers.png';
+import team03 from './Gir Gliders.png';
+import team04 from './Kanha Knights.png';
+import team05 from './Kaziranga Kaisers.png';
+import team06 from './Nallamala Nets.png';
+import team07 from './Namdapha Nimblebirds.png';
+import team08 from './Nilgiri Ninjas.png';
+import team09 from './Pichavaram Phoenixes.png';
+import team10 from './Saranda Shuttlers.png';
+import team11 from './Sundarbans Smashers.png';
+import team12 from './Wayanad Warriors.png';
 
 const images = {
     team01,

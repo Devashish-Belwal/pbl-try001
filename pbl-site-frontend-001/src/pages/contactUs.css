@@ -1,0 +1,108 @@
+.contact-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto; /* Center the container on smaller screens */
+  text-align: center;
+  padding: 40px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #e7e5e8;
+}
+
+.common-heading {
+  text-align: center;
+  color: #070708;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.common-heading2 {
+  text-align: center;
+  color: #070708;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.embedded-map {
+  width: 100%;
+  padding: 10px;
+  margin-left: 0px; /* Remove the margin on smaller screens */
+}
+
+.contact-container p {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #070708;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.anchor {
+  color: #070708;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.anchor:hover {
+  color: #3838e0;
+  font-size: 45px;
+  transition: 0.20s;
+}
+
+.contact-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+}
+
+.contact-us-container {
+  background-color: #e9dede; /* Add this line */
+  padding: 20px;
+}
+
+/* Add media queries for larger and smaller screens */
+@media screen and (min-width: 768px) {
+  .contact-container {
+    margin: 20px auto; /* Center the container on larger screens */
+    max-width: 800px; /* Increase the max-width on larger screens */
+  }
+
+  .common-heading {
+    font-size: 80px; /* Increase the font size on larger screens */
+  }
+
+  .common-heading2 {
+    font-size: 60px; /* Increase the font size on larger screens */
+  }
+
+  .embedded-map {
+    margin-left: 150px; /* Add the margin on larger screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .common-heading {
+    font-size: 40px; /* Decrease the font size on smaller screens */
+  }
+
+  .common-heading2 {
+    font-size: 30px; /* Decrease the font size on smaller screens */
+  }
+
+  .embedded-map {
+    margin-left: 0px; /* Remove the margin on smaller screens */
+  }
+}

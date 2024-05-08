@@ -23,6 +23,9 @@
   }
   
   .card-content {
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
     text-align: center;
   }

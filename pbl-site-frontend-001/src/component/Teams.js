@@ -2,6 +2,7 @@ import React/* , { useState, useEffect } */ from 'react';
 /* import CustomAccordion from './HomeTeamData.js'; */
 import icons from '../assets/Team_Icons/Team_icons.js';
 import Card from './BasicCard.js';
+import { Link } from 'react-router-dom';
 
 const TeamStandings = () => {
 
@@ -54,33 +55,57 @@ const TeamStandings = () => {
 
             <div style={{display: 'flex', gap: '10px', width: '100%', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' }}>
 
-                <Card name="Bandipur Blazers" imageUrl={iconsDict["Bandipur"]} />
+                <Link to={"/bandipur_blazers"}>
+                    <Card name="Bandipur Blazers" imageUrl={iconsDict["Bandipur"]} />
+                </Link>
 
-                <Card name="Corbett Crushers" imageUrl={iconsDict["Corbett"]} />
+                <Link to={"/corbett_crushers"}>
+                    <Card name="Corbett Crushers" imageUrl={iconsDict["Corbett"]} />
+                </Link>
 
-                <Card name="Gir Gliders" imageUrl={iconsDict["Gir"]} />
+                <Link to={"/gir_gliders"}>
+                    <Card name="Gir Gliders" imageUrl={iconsDict["Gir"]} />
+                </Link>
 
-                <Card name="Kanha Knights" imageUrl={iconsDict["Kanha"]} />
+                <Link to={"/kanha_knights"}>
+                    <Card name="Kanha Knights" imageUrl={iconsDict["Kanha"]} />
+                </Link>
 
-                <Card name="Kaziranga Kaisers" imageUrl={iconsDict["Kaziranga"]} />
+                <Link to={"/kaziranga_kaisers"}>
+                    <Card name="Kaziranga Kaisers" imageUrl={iconsDict["Kaziranga"]} />
+                </Link>
 
-                <Card name="Nallamala Nets" imageUrl={iconsDict["Nallamala"]} />
+                <Link to={"/nallamala_nets"}>
+                    <Card name="Nallamala Nets" imageUrl={iconsDict["Nallamala"]} />
+                </Link>
 
             </div>
 
             <div style={{display: 'flex', gap: '10px', width: '100%', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' }}>
 
-                <Card name="Namdapha Nimblebirds" imageUrl={iconsDict["Namdapha"]} />
+                <Link to={"/namdapha_nimblebirds"}>
+                    <Card name="Namdapha Nimblebirds" imageUrl={iconsDict["Namdapha"]} />
+                </Link>
 
-                <Card name="Nilgiri Ninjas" imageUrl={iconsDict["Nilgiri"]} />
+                <Link to={"/nilgiri_ninjas"}>
+                    <Card name="Nilgiri Ninjas" imageUrl={iconsDict["Nilgiri"]} />
+                </Link>
 
-                <Card name="Pichavaram Phoenixes" imageUrl={iconsDict["Pichavaram"]} />
+                <Link to={"/pichavaram_phoenixes"}>
+                    <Card name="Pichavaram Phoenixes" imageUrl={iconsDict["Pichavaram"]} />
+                </Link>
 
-                <Card name="Saranda Shuttlers" imageUrl={iconsDict["Saranda"]} />
+                <Link to={"/saranda_shuttlers"}>
+                    <Card name="Saranda Shuttlers" imageUrl={iconsDict["Saranda"]} />
+                </Link>
 
-                <Card name="Sundarbans Smashers" imageUrl={iconsDict["Sundarbans"]} />
+                <Link to={"/sundarbans_smashers"}>
+                    <Card name="Sundarbans Smashers" imageUrl={iconsDict["Sundarbans"]} />
+                </Link>
 
-                <Card name="Wayanad Warriors" imageUrl={iconsDict["Waynad"]} />
+                <Link to={"/waynad_wariors"}>
+                    <Card name="Wayanad Warriors" imageUrl={iconsDict["Waynad"]} />
+                </Link>
 
             </div>
 

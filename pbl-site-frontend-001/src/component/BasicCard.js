@@ -1,0 +1,17 @@
+import React from 'react';
+import '../styles/BasicCard.css';
+
+const Card = ({ name, imageUrl }) => {
+  return (
+    <div className="card">
+      <div className="card-image">
+        <img src={imageUrl} alt={name} style={{width:'10rem'}}/>
+      </div>
+      <div className="card-content">
+        <h6>{name}</h6>
+      </div>
+    </div>
+  );
+};
+
+export default Card;

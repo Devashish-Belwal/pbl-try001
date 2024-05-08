@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Acc from './FixturesAcc';
 
 const SSEComponent = () => {
   const [messages, setMessages] = useState([]);
